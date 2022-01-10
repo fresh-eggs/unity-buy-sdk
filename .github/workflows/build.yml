@@ -14,10 +14,9 @@ jobs:
     - name: Publish test .unitypackage
       uses: MirrorNG/unity-runner@3.1.0
       with:
-        -username ${{ secrets.VRY_SECRET }}
-        -password ${{ secrets.VRY_SECRET }}
-        -serial ${{ secrets.VRY_SECRET }}
-        -quit $UNITY_PACKAGE
+        username: ${{ secrets.VRY_SECRET }}
+        password: ${{ secrets.VRY_SECRET }}
+        serial: ${{ secrets.VRY_SECRET }}
 
     - name: log action output
       run: echo ${{steps.run_action.outputs.my_output}} 
