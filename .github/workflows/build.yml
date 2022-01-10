@@ -8,7 +8,7 @@ jobs:
   package_unity:
     runs-on: ubuntu-latest
     env:
-      UNITY_PACKAGE: test.unitypackage
+      UNITY_PACKAGE: test2.unitypackage
 
     steps:
     - name: Publish test .unitypackage
